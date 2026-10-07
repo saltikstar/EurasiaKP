@@ -225,7 +225,10 @@
     @media(prefers-reduced-motion:reduce){
       html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.typed{width:auto;border-right:0}.track{width:auto;flex-wrap:wrap}.category-strip{overflow:visible}
     }
-  </style>
+  .mobile-plans{display:none}.mobile-plan{padding:24px;border:1px solid var(--line);border-radius:24px;background:#fff}.mobile-plan h3{font-size:26px}.mobile-plan ul{padding-left:22px;margin:20px 0}.mobile-plan li{margin:12px 0;line-height:1.5}
+@media(max-width:720px){.section-price .pricing-wrap{display:none}.mobile-plans{display:grid;gap:18px}.hero h1{font-size:32px}.h2{font-size:28px}.note,.sub,.term,.plan-label,.panel-title,.step small,.time-item span,.need p,.stat small,footer{font-size:16px}.section{padding:48px 0}.stats{grid-template-columns:1fr}.screen{min-height:310px}.scenario-card .h2{font-size:26px}}
+@media print{.mobile-plans{display:none!important}.section-price .pricing-wrap{display:block!important}}
+</style>
 </head>
 <body>
 <header class="top" id="top">
@@ -251,7 +254,7 @@
     <div class="hero-grid">
       <div>
         <p class="eyebrow">Коммерческое предложение</p>
-        <h1>Евразия — весь ТРЦ <em>в одном цифровом пространстве</em></h1>
+        <h1>Новый официальный сайт <em>ТРЦ «Евразия»</em></h1>
         <p class="lead">Новый сайт поможет познакомиться с ТРЦ, узнать об акциях и событиях, найти магазины, услуги и развлечения.</p>
         <div class="hero-actions">
           <a class="btn" href="#scenario">Показать решение
@@ -297,7 +300,7 @@
     <div class="stats">
       <div class="stat rv"><div class="num" data-to="1">1</div><b>единая система</b><small>вся информация о ТРЦ в одном месте</small></div>
       <div class="stat rv d2"><div class="num" data-to="2">2</div><b>варианта запуска</b><small>информационный сайт или сайт с каталогом</small></div>
-      <div class="stat rv d3"><div class="num" data-to="8">8</div><b>недель</b><small>ориентир для сайта с каталогом</small></div>
+      <div class="stat rv d3"><div class="num" data-to="8">8</div><b>недель</b><small>максимальный срок для сайта с каталогом</small></div>
     </div>
   </div>
 </section>
@@ -305,13 +308,13 @@
 <section class="section section-value" id="value">
   <div class="wrap">
     <div class="head rv">
-      <div><p class="eyebrow">Что меняется</p><h2 class="h2" style="margin-top:12px">Сайт становится частью самого ТРЦ</h2></div>
+      <div><p class="eyebrow">Что меняется</p><h2 class="h2" style="margin-top:12px">Всё для планирования визита</h2></div>
       <p class="lead">Информация о ТРЦ, актуальные события и удобный поиск объектов помогают посетителю спланировать визит.</p>
     </div>
     <div class="bento">
       <article class="tile tile-a rv">
         <div class="tile-art"><span>Магазины</span><span>Рынок</span><span>Еда</span><span>Развлечения</span><span>Услуги</span></div>
-        <div><h3>Каталог объектов</h3><p>Магазины, еда, услуги и развлечения собраны в едином каталоге.</p></div>
+        <div><h3>Магазины и услуги</h3><p>Магазины, еда, услуги и развлечения собраны в едином каталоге.</p></div>
       </article>
       <article class="tile tile-b rv d1">
         <div class="tile-art flow"><span>Поиск</span><i>→</i><span>Объект</span><i>→</i><span>Этаж</span></div>
@@ -333,7 +336,7 @@
   <div class="wrap">
     <div class="scenario-card rv">
       <div class="head">
-        <div><p class="eyebrow">Сценарий посетителя</p><h2 class="h2" style="margin-top:12px">Найти. Понять. Дойти.</h2></div>
+        <div><p class="eyebrow">Сценарий посетителя</p><h2 class="h2" style="margin-top:12px">Найти магазин и узнать, где он находится</h2></div>
         <p class="lead">Пример поиска магазина в каталоге. Название магазина и номер помещения условные.</p>
       </div>
       <div class="scenario-grid">
@@ -374,7 +377,7 @@
       <p class="lead">Посетители находят магазины и узнают о событиях. ТРЦ получает площадку для продвижения арендаторов, акций и ярмарок, а также обращений по аренде и рекламе.</p>
     </div>
     <div class="business-grid">
-      <article class="business-card rv"><div class="icon">01</div><div><h3>Продвижение арендаторов</h3><p>Информация о магазинах и услугах доступна на официальном сайте.</p></div></article>
+      <article class="business-card rv"><div class="icon">01</div><div><h3>Продвижение арендаторов</h3><p>У магазинов есть страницы, которыми можно делиться в рекламе и соцсетях.</p></div></article>
       <article class="business-card rv d1"><div class="icon">02</div><div><h3>Внимание к акциям и событиям</h3><p>Посетители узнают о предложениях и получают повод приехать.</p></div></article>
       <article class="business-card rv d2"><div class="icon">03</div><div><h3>Обращения по аренде и рекламе</h3><p>Условия и форма связи для потенциальных партнёров.</p></div></article>
     </div>
@@ -385,7 +388,7 @@
 <div class="wrap">
 <div class="head rv"><div><p class="eyebrow">Варианты реализации</p><h2 class="h2" style="margin-top:12px">Два варианта сайта</h2></div><p class="lead">Базовый рассказывает о ТРЦ и событиях. Сайт с каталогом дополнительно помогает найти конкретный магазин или услугу. Административная панель входит в оба варианта.</p></div>
 
-<div class="pricing-wrap rv"><table><thead><tr><th class="feature-col" scope="col">Что входит</th><th scope="col"><span class="plan-label">Вариант 01</span><span class="plan-name">Базовый</span><span class="price">490 000 ₸</span><span class="term">Ориентир — 4 недели</span></th><th class="recommended" scope="col"><span class="plan-label">Вариант 02</span><span class="plan-name">С каталогом</span><span class="price">990 000 ₸</span><span class="term">Ориентир — 8 недель</span></th></tr></thead><tbody><tr><th scope="row">Индивидуальный дизайн и мобильная версия</th><td><span class="ok" aria-label="Входит">✓</span></td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
+<div class="pricing-wrap rv"><table><thead><tr><th class="feature-col" scope="col">Что входит</th><th scope="col"><span class="plan-label">Вариант 01</span><span class="plan-name">Базовый</span><span class="price">490 000 ₸</span><span class="term">4 недели</span></th><th class="recommended" scope="col"><span class="plan-label">Вариант 02</span><span class="plan-name">С каталогом</span><span class="price">990 000 ₸</span><span class="term">До 8 недель</span></th></tr></thead><tbody><tr><th scope="row">Индивидуальный дизайн и мобильная версия</th><td><span class="ok" aria-label="Входит">✓</span></td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
 <tr><th scope="row">О ТРЦ, парковка, график, контакты и как добраться</th><td><span class="ok" aria-label="Входит">✓</span></td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
 <tr><th scope="row">Аренда и реклама — одна страница с формой обращения</th><td><span class="ok" aria-label="Входит">✓</span></td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
 <tr><th scope="row">Акции, ярмарки и события — общий раздел</th><td><span class="ok" aria-label="Входит">✓</span></td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
@@ -393,27 +396,26 @@
 <tr><th scope="row">Обычные поэтажные планы от клиента</th><td>Изображения или PDF</td><td class="recommended">Изображения или PDF</td></tr>
 <tr><th scope="row">Каталог магазинов, еды, услуг и развлечений</th><td>—</td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
 <tr><th scope="row">Карточки объектов: фото, описание, контакты, график, этаж и номер</th><td>—</td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
-<tr><th scope="row">Поиск по названию, фильтры по категории и этажу</th><td>—</td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
+<tr><th scope="row">Поиск по названию и категории, фильтр по этажу</th><td>—</td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
 <tr><th scope="row">Ручное добавление объектов и импорт по шаблону</th><td>—</td><td class="recommended"><span class="ok" aria-label="Входит">✓</span><span class="sub">таблица CSV в согласованном формате</span></td></tr>
 <tr><th scope="row">Базовое SEO, аналитика, проверка и запуск</th><td><span class="ok" aria-label="Входит">✓</span></td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr></tbody></table></div>
+<div class="mobile-plans"><article class="mobile-plan"><h3>Базовый</h3><p class="price">490 000 ₸</p><p>4 недели</p><ul><li>Индивидуальный дизайн и мобильная версия</li><li>Информация о ТРЦ, парковке, графике и контактах</li><li>Как добраться и готовые планы этажей</li><li>Аренда и реклама, форма обращения</li><li>Акции, ярмарки и события</li><li>Административная панель и обучение</li><li>Базовое SEO, аналитика и запуск</li></ul><p class="note">Без каталога, карточек бутиков и поиска.</p></article><article class="mobile-plan recommended"><h3>С каталогом</h3><p class="price">990 000 ₸</p><p>До 8 недель</p><p style="margin-top:18px">Всё из базового варианта, плюс:</p><ul><li>Каталог магазинов, еды, услуг и развлечений</li><li>Карточки с фото, контактами, графиком, этажом и номером</li><li>Поиск по названию и категории, фильтр по этажу</li><li>Ручное заполнение и импорт CSV по шаблону</li></ul></article></div>
+<p class="note">Домен и хостинг оплачивает заказчик отдельно.</p>
 <p class="note">Оба варианта реализуются на русском языке. Возможность подключения других языков предусмотрена в архитектуре; их подключение, переводы и наполнение в стоимость не входят.</p>
 <p class="note">Интерактивные карты, подсветка помещений, построение маршрутов, сложные фильтры, дополнительные интеграции и нестандартные анимации не входят в предложение. Поэтажные планы размещаются в готовом виде, предоставленном ТРЦ.</p>
-<div class="need rv"><div><h3>Наполнение и передача</h3><p>Материалы предоставляет ТРЦ. Сайт передаётся с административной панелью и обучением сотрудников.</p></div><div><p style="font-size:16px">В варианте с каталогом заполняем согласованное до начала работ количество карточек для примера. Остальной каталог сотрудники ТРЦ наполняют вручную или импортируют из таблицы CSV по предоставленному шаблону: название, категория, описание, контакты, график, этаж и номер помещения. Перед загрузкой проверяем обязательные поля и показываем ошибки. Фотографии добавляются отдельно. Сбор данных по всем бутикам, очистка произвольных файлов и полное наполнение в стоимость не входят.</p></div></div>
+<div class="need rv"><div><h3>Наполнение и передача</h3><p>Материалы предоставляет ТРЦ. Сайт передаётся с административной панелью и обучением сотрудников.</p></div><div><p style="font-size:16px"><strong>Мы заполняем:</strong> основные страницы материалами клиента, до 3 публикаций и, в варианте с каталогом, до 5 карточек бутиков для примера.</p><p><strong>ТРЦ заполняет:</strong> остальные карточки и публикации после обучения.</p><p><strong>Импорт:</strong> добавление и обновление бутиков по уникальному коду из CSV по нашему шаблону. Проверка обязательных полей и ошибок; фотографии загружаются отдельно.</p><p><strong>Не входит:</strong> сбор информации по всем бутикам, очистка произвольных файлов и полное наполнение каталога.</p></div></div>
 </div></section>
 
 <section class="section section-terms" id="terms">
   <div class="wrap">
     <div class="head rv">
       <div><p class="eyebrow">Сроки</p><h2 class="h2" style="margin-top:12px">Сроки реализации</h2></div>
-      <p class="lead">Ориентир: базовый сайт — 4 недели, сайт с каталогом — 8 недель. Срок отсчитывается после согласования состава работ и получения необходимых материалов. Задержки материалов и согласований сдвигают дату запуска.</p>
+      <p class="lead">Базовый сайт — 4 недели. Сайт с каталогом — до 8 недель. Для соблюдения сроков до начала работ согласуем состав сайта, получим необходимые материалы и назначим ответственного за согласования.</p>
     </div>
-    <div class="timeline" id="timeline">
-      <div class="timeline-line"><i></i></div>
-      <article class="time-item"><div class="week">1–2</div><b>Основа</b><span>Структура, дизайн, главная, архитектура проекта</span></article>
-      <article class="time-item"><div class="week">3–4</div><b>Публичная часть</b><span>Основные страницы, публикации и мобильная версия; в варианте с каталогом — карточки объектов</span></article>
-      <article class="time-item"><div class="week">5–6</div><b>Управление</b><span>Административная панель; в варианте с каталогом — поиск и фильтры</span></article>
-      <article class="time-item"><div class="week">7–8</div><b>Проверка и запуск</b><span>Аналитика, тестирование, обучение сотрудников и публикация</span></article>
-    </div>
+    <div class="timeline" id="timeline"><div class="timeline-line"><i></i></div><article class="time-item"><div class="week">01</div><b>Структура и дизайн</b><span>Согласуем разделы, содержание и визуальную концепцию.</span></article>
+<article class="time-item"><div class="week">02</div><b>Разработка</b><span>Соберём страницы и административную панель; для каталога — карточки, поиск и импорт.</span></article>
+<article class="time-item"><div class="week">03</div><b>Наполнение</b><span>Разместим материалы клиента и примеры публикаций, проверим работу сайта.</span></article>
+<article class="time-item"><div class="week">04</div><b>Запуск и обучение</b><span>Подключим аналитику, опубликуем сайт и обучим сотрудников.</span></article></div>
     <div class="need rv">
       <div><h3>Что потребуется от ТРЦ</h3><p>ТРЦ предоставляет материалы и назначает сотрудника для наполнения и согласований. Чек-лист материалов для начала работы.</p></div>
       <div class="checks">
