@@ -107,7 +107,7 @@
 
     .category-strip{margin-top:54px;overflow:hidden}.track{display:flex;width:max-content;animation:slide 30s linear infinite}.category-strip:hover .track{animation-play-state:paused}.group{display:flex;gap:12px;padding-right:12px}.cat{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);padding:13px 18px;border-radius:999px;font-weight:650;white-space:nowrap}.cat i{width:10px;height:10px;border-radius:50%;display:block;background:var(--red)}.cat:nth-child(4n+2){background:var(--blue)}.cat:nth-child(4n+2) i{background:#438bd8}.cat:nth-child(4n+3){background:var(--peach)}.cat:nth-child(4n+3) i{background:#eb9d55}.cat:nth-child(4n+4){background:var(--mint)}.cat:nth-child(4n+4) i{background:#61a27a}
 
-    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}.stat{padding:20px 21px;border-radius:24px;background:#fff;border:1px solid var(--line)}.stat:nth-child(2){background:var(--blue)}.stat:nth-child(3){background:var(--yellow)}.stat:nth-child(4){background:var(--green-soft)}.stat .num{font-size:clamp(30px,4vw,48px);font-weight:650;letter-spacing:-.04em;line-height:1}.stat b{display:block;margin-top:10px}.stat small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.stat{padding:20px 21px;border-radius:24px;background:#fff;border:1px solid var(--line)}.stat:nth-child(2){background:var(--blue)}.stat:nth-child(3){background:var(--yellow)}.stat:nth-child(4){background:var(--green-soft)}.stat .num{font-size:clamp(30px,4vw,48px);font-weight:650;letter-spacing:-.04em;line-height:1}.stat b{display:block;margin-top:10px}.stat small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
 
     .head{display:grid;grid-template-columns:.88fr 1.12fr;gap:56px;align-items:end;margin-bottom:38px}.head .lead{justify-self:end;max-width:600px}
     .bento{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.tile{position:relative;overflow:hidden;border-radius:24px;padding:30px;min-height:290px;display:flex;flex-direction:column;justify-content:flex-start;gap:18px;transition:transform .3s,box-shadow .3s}.tile:hover{transform:translateY(-5px);box-shadow:var(--shadow-sm)}.tile h3{font-size:clamp(22px,2.25vw,30px);line-height:1.12;letter-spacing:-.015em;margin-bottom:10px}.tile p{font-size:15px;color:#555d70;max-width:40ch}.tile-a{grid-column:span 7;background:var(--blue)}.tile-b{grid-column:span 5;background:var(--peach)}.tile-c{grid-column:span 5;background:var(--mint)}.tile-d{grid-column:span 7;background:var(--lilac);gap:24px}
@@ -296,7 +296,6 @@
 
     <div class="stats">
       <div class="stat rv"><div class="num" data-to="1">1</div><b>единая система</b><small>вся информация о ТРЦ в одном месте</small></div>
-      <div class="stat rv d1"><div class="num" data-to="1">1</div><b>язык</b><small>русский · возможность подключения других языков</small></div>
       <div class="stat rv d2"><div class="num" data-to="2">2</div><b>варианта запуска</b><small>информационный сайт или сайт с каталогом</small></div>
       <div class="stat rv d3"><div class="num" data-to="8">8</div><b>недель</b><small>ориентир для сайта с каталогом</small></div>
     </div>
@@ -335,7 +334,7 @@
     <div class="scenario-card rv">
       <div class="head">
         <div><p class="eyebrow">Сценарий посетителя</p><h2 class="h2" style="margin-top:12px">Найти. Понять. Дойти.</h2></div>
-        <p class="lead">Пример сценария для варианта «С каталогом» за 990 000 ₸. Название магазина и номер помещения условные.</p>
+        <p class="lead">Пример поиска магазина в каталоге. Название магазина и номер помещения условные.</p>
       </div>
       <div class="scenario-grid">
         <div class="steps" role="tablist" aria-label="Шаги сценария">
@@ -390,16 +389,16 @@
 <tr><th scope="row">О ТРЦ, парковка, график, контакты и как добраться</th><td><span class="ok" aria-label="Входит">✓</span></td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
 <tr><th scope="row">Аренда и реклама — одна страница с формой обращения</th><td><span class="ok" aria-label="Входит">✓</span></td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
 <tr><th scope="row">Акции, ярмарки и события — общий раздел</th><td><span class="ok" aria-label="Входит">✓</span></td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
-<tr><th scope="row">Русский язык</th><td><span class="ok" aria-label="Входит">✓</span></td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
 <tr><th scope="row">Административная панель и обучение сотрудников</th><td>Страницы и публикации</td><td class="recommended">Страницы, публикации и объекты</td></tr>
 <tr><th scope="row">Обычные поэтажные планы от клиента</th><td>Изображения или PDF</td><td class="recommended">Изображения или PDF</td></tr>
 <tr><th scope="row">Каталог магазинов, еды, услуг и развлечений</th><td>—</td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
 <tr><th scope="row">Карточки объектов: фото, описание, контакты, график, этаж и номер</th><td>—</td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
 <tr><th scope="row">Поиск по названию, фильтры по категории и этажу</th><td>—</td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr>
+<tr><th scope="row">Ручное добавление объектов и импорт по шаблону</th><td>—</td><td class="recommended"><span class="ok" aria-label="Входит">✓</span><span class="sub">таблица CSV в согласованном формате</span></td></tr>
 <tr><th scope="row">Базовое SEO, аналитика, проверка и запуск</th><td><span class="ok" aria-label="Входит">✓</span></td><td class="recommended"><span class="ok" aria-label="Входит">✓</span></td></tr></tbody></table></div>
 <p class="note">Оба варианта реализуются на русском языке. Возможность подключения других языков предусмотрена в архитектуре; их подключение, переводы и наполнение в стоимость не входят.</p>
 <p class="note">Интерактивные карты, подсветка помещений, построение маршрутов, сложные фильтры, дополнительные интеграции и нестандартные анимации не входят в предложение. Поэтажные планы размещаются в готовом виде, предоставленном ТРЦ.</p>
-<div class="need rv"><div><h3>Наполнение и передача</h3><p>Материалы предоставляет ТРЦ. Сайт передаётся с административной панелью и обучением сотрудников.</p></div><div><p style="font-size:16px">В варианте с каталогом заполняем согласованное до начала работ количество карточек для примера. Остальной каталог сотрудники ТРЦ наполняют самостоятельно. Полное наполнение и сбор данных по всем бутикам в стоимость не входят.</p></div></div>
+<div class="need rv"><div><h3>Наполнение и передача</h3><p>Материалы предоставляет ТРЦ. Сайт передаётся с административной панелью и обучением сотрудников.</p></div><div><p style="font-size:16px">В варианте с каталогом заполняем согласованное до начала работ количество карточек для примера. Остальной каталог сотрудники ТРЦ наполняют вручную или импортируют из таблицы CSV по предоставленному шаблону: название, категория, описание, контакты, график, этаж и номер помещения. Перед загрузкой проверяем обязательные поля и показываем ошибки. Фотографии добавляются отдельно. Сбор данных по всем бутикам, очистка произвольных файлов и полное наполнение в стоимость не входят.</p></div></div>
 </div></section>
 
 <section class="section section-terms" id="terms">
