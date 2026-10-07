@@ -41,7 +41,20 @@
     .eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:700;color:var(--muted)}
     .h2{font-size:clamp(32px,4.2vw,56px);line-height:1.05;letter-spacing:-.035em;font-weight:600}
     .lead{font-size:clamp(17px,1.55vw,21px);line-height:1.5;color:var(--muted);max-width:720px}
-    .section{padding:90px 0}
+    .section{padding:104px 0;position:relative}
+    .section-value{background:#ffffff;border-top:1px solid #eeeee8;border-bottom:1px solid #eeeee8}
+    .section-scenario{background:#eaf4fb}
+    .section-business{background:#f4efe7}
+    .section-price{background:#eef3ed}
+    .section-terms{background:#f2eff8}
+    .section-value .eyebrow,.section-scenario .eyebrow,.section-business .eyebrow,.section-price .eyebrow,.section-terms .eyebrow{display:inline-flex;align-items:center;min-height:30px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid rgba(24,32,58,.07)}
+    .section-scenario .scenario-card{box-shadow:0 24px 60px rgba(32,43,76,.09)}
+    .section-business .business-card{background:rgba(255,255,255,.72)}
+    .section-business .business-card:nth-child(2){background:#fff4cc}
+    .section-business .business-card:nth-child(3){background:#e5f1e8}
+    .section-price .pricing-wrap{box-shadow:0 22px 56px rgba(32,43,76,.08)}
+    .section-terms .time-item{background:rgba(255,255,255,.82)}
+    .section-terms .need{background:#ffe9d8}
     .top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid transparent;transition:.25s}
     .top.sc{border-color:var(--line);background:color-mix(in srgb,var(--bg) 96%,transparent)}
     .top .wrap{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
@@ -120,6 +133,8 @@
       .hero-grid{grid-template-columns:1fr;gap:28px}.product-demo{min-height:540px}.demo-shell{inset:16px 0 0 0}.float-card.a{right:8px}.head{grid-template-columns:1fr;gap:16px}.head .lead{justify-self:start}.tile-a,.tile-b,.tile-c,.tile-d{grid-column:span 12}.scenario-grid{grid-template-columns:1fr}.business-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr 1fr;padding-top:0}.timeline-line{display:none}.time-item:before{display:none}.need{grid-template-columns:1fr}.final{grid-template-columns:1fr}.final-art{min-height:240px}
     }
     @media(max-width:720px){
+      .section{padding:76px 0}
+      .section-value .eyebrow,.section-scenario .eyebrow,.section-business .eyebrow,.section-price .eyebrow,.section-terms .eyebrow{min-height:28px;padding:6px 10px}
       .wrap{width:100%;padding-inline:14px}.top .wrap{height:68px}.brand img{width:84px}.nav a:not(.nav-cta){display:none}.nav .nav-cta{font-size:12px;padding:9px 13px}.hero{padding-top:20px}.hero h1{font-size:42px;line-height:1.04}.hero .lead{font-size:17px}.product-demo{min-height:500px}.demo-shell{padding:11px;border-radius:25px}.demo-hero{padding:17px;grid-template-columns:1fr 80px}.demo-orbit{width:80px;height:80px}.demo-hero b{font-size:18px}.plan-svg{width:130px}.float-card{font-size:10px}.float-card.b{bottom:6px}.category-strip{margin-top:38px}.stats{grid-template-columns:1fr 1fr}.section{padding:66px 0}.h2{font-size:36px;line-height:1.08}.bento{display:grid}.tile{padding:22px;min-height:230px}.tile-d{gap:30px}.tile-d .floor-art{margin-bottom:8px}.scenario-card{border-radius:28px;padding:18px}.scenario-card .head{grid-template-columns:1fr}.screen{min-height:330px}.place{grid-template-columns:1fr}.pricing-wrap{border-radius:22px}.timeline{grid-template-columns:1fr}.checks{grid-template-columns:1fr}.final{border-radius:28px}.final-art{display:none}.footer-row{align-items:flex-start}
     }
     @media(max-width:430px){
@@ -211,7 +226,7 @@
   </div>
 </section>
 
-<section class="section" id="value">
+<section class="section section-value" id="value">
   <div class="wrap">
     <div class="head rv">
       <div><p class="eyebrow">Что меняется</p><h2 class="h2" style="margin-top:12px">Сайт становится частью самого ТРЦ</h2></div>
@@ -238,7 +253,7 @@
   </div>
 </section>
 
-<section class="section" id="scenario">
+<section class="section section-scenario" id="scenario">
   <div class="wrap">
     <div class="scenario-card rv">
       <div class="head">
@@ -281,7 +296,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section section-business">
   <div class="wrap">
     <div class="head rv">
       <div><p class="eyebrow">Что получает ТРЦ</p><h2 class="h2" style="margin-top:12px">Сайт работает и для посетителя, и для бизнеса</h2></div>
@@ -295,7 +310,7 @@
   </div>
 </section>
 
-<section class="section" id="price">
+<section class="section section-price" id="price">
   <div class="wrap">
     <div class="head rv">
       <div><p class="eyebrow">Варианты реализации</p><h2 class="h2" style="margin-top:12px">Можно начать с основы или сразу собрать полную систему</h2></div>
@@ -322,7 +337,7 @@
   </div>
 </section>
 
-<section class="section" id="terms">
+<section class="section section-terms" id="terms">
   <div class="wrap">
     <div class="head rv">
       <div><p class="eyebrow">Сроки</p><h2 class="h2" style="margin-top:12px">Полная версия — 8 недель</h2></div>
